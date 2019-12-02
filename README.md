@@ -1,9 +1,12 @@
 # SUSE Apprentices Timesheets made easy
 
 ## Contributions are welcome:
-   + [ ] Implement working hours carryover(Stundenübertrag)
    + [ ] Possibility to add more days with one command for vacation, etc.
    + [ ] `export` should accept date without day, like this `-d 10.2019`
+   + [ ] Implement working hours carryover(Stundenübertrag)
+   + Update: early implementation does the job, but it can't extract the value from previous month unless:
+      you exported the previous month already AND opened the previous xlsx file AND Ctrl+S to save it,
+      so that the calculated values of all formulas are saved. Not quite ideal.
    + [x] Adding "special" days like: vacation, school; only date and comment needed for that
    + [x] Method to fill in records from json file to xlsx exported file
    + [x] Method to create file names like `timesheet_2019_10.json` `timesheet_2019_10.xlsx` and implement where needed
